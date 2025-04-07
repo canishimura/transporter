@@ -1,10 +1,13 @@
 package transporter;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JMenuItem;
 
 public class TelaPrincipal extends javax.swing.JFrame {
     
@@ -15,8 +18,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     public TelaPrincipal() {
         initComponents();
-        inicializarArrayDeBotoes();
-        atualizarCorPoltrona ();
+        myInitComponents();
         
         this.setTitle("Transporter");
         this.setResizable(false);
@@ -133,7 +135,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuPassagensItem1 = new javax.swing.JMenuItem();
         menuPassagensItem2 = new javax.swing.JMenuItem();
         menuPassagensItem3 = new javax.swing.JMenuItem();
-        menuSobre1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -344,19 +345,25 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuBarra1.add(menuPassagens1);
 
-        menuSobre1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/help.png"))); // NOI18N
-        menuSobre1.setText("Sobre");
-        menuSobre1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuSobre1ActionPerformed(evt);
-            }
-        });
-        menuBarra1.add(menuSobre1);
-
         setJMenuBar(menuBarra1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void myInitComponents() {
+        inicializarArrayDeBotoes();
+        atualizarCorPoltrona();
+        
+        JMenuItem menuSobre = new JMenuItem("Sobre");
+        menuSobre.setIcon(new ImageIcon(getClass().getResource("/imagens/help.png")));
+        menuSobre.addActionListener(evt -> {
+            TelaSobre telaSobre = new TelaSobre();
+            telaSobre.setVisible(true);
+        });
+        menuSobre.setPreferredSize(new Dimension(80, 22));
+        menuSobre.setMaximumSize(new Dimension(80, 22));
+        menuBarra1.add(menuSobre);
+        }
     
     private static boolean verificaPoltrona (int poltrona) {
         for (Passagem p : TelaPrincipal.passagens) {
@@ -414,13 +421,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void menuPassagens1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPassagens1ActionPerformed
 
     }//GEN-LAST:event_menuPassagens1ActionPerformed
-
-    private void menuSobre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSobre1ActionPerformed
-
-        TelaSobre telaSobre = new TelaSobre();
-        telaSobre.setVisible(true);
-
-    }//GEN-LAST:event_menuSobre1ActionPerformed
 
     public static void main(String args[]) {
         Passageiro p01 = new Passageiro("Jair Leão", "451.356.415-12", "jairleao@gmail.com");
@@ -553,6 +553,5 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuPassagensItem1;
     private javax.swing.JMenuItem menuPassagensItem2;
     private javax.swing.JMenuItem menuPassagensItem3;
-    private javax.swing.JMenu menuSobre1;
     // End of variables declaration//GEN-END:variables
 }
