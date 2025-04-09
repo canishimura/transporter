@@ -1,5 +1,8 @@
 package transporter;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
@@ -18,7 +21,10 @@ public class TelaVisualizarCidades extends javax.swing.JFrame {
         tab.addColumn("Estado");
         tab.addColumn("Código");
         
-        for(Cidade c : TelaPrincipal.cidades) {
+        List<Cidade> cidadesOrdenadas = new ArrayList<>(TelaPrincipal.cidades);
+        cidadesOrdenadas.sort(Comparator.comparing(Cidade::getCidade,String.CASE_INSENSITIVE_ORDER));
+        
+        for(Cidade c : cidadesOrdenadas) {
             tab.addRow(
              new Object [] { c.getCidade(), c.getEstado(), c.getCodigo()}
             );

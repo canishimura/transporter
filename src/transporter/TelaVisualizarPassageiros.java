@@ -1,5 +1,8 @@
 package transporter;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
@@ -18,7 +21,10 @@ public class TelaVisualizarPassageiros extends javax.swing.JFrame {
         tab.addColumn("CPF");
         tab.addColumn("E-mail");
         
-        for(Passageiro p : TelaPrincipal.passageiros) {
+        List<Passageiro> passageirosOrdenados = new ArrayList<>(TelaPrincipal.passageiros);
+        passageirosOrdenados.sort(Comparator.comparing(Passageiro::getNome, String.CASE_INSENSITIVE_ORDER));
+        
+        for(Passageiro p : passageirosOrdenados) {
             tab.addRow(
              new Object [] { p.getNome(), p.getCpf(), p.getEmail()}
             );
@@ -62,7 +68,7 @@ public class TelaVisualizarPassageiros extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(lblListaPassageiros)
