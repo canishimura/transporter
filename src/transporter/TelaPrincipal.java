@@ -126,6 +126,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         btnPoltrona39 = new javax.swing.JButton();
         btnPoltrona40 = new javax.swing.JButton();
         imgOnibus = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         menuBarra1 = new javax.swing.JMenuBar();
         menuPassageiros1 = new javax.swing.JMenu();
         menuPassageirosItem1 = new javax.swing.JMenuItem();
@@ -463,6 +464,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         imgOnibus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/onibusContorno2.png"))); // NOI18N
         getContentPane().add(imgOnibus, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 74, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setText("Ribeirão Preto x São Paulo - 20/05/2025");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
 
         menuPassageiros1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/group.png"))); // NOI18N
         menuPassageiros1.setText("Passageiros");
@@ -1382,82 +1387,44 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPoltrona40ActionPerformed
 
     private void menuPassagensItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPassagensItem2ActionPerformed
-//        String poltronaCancel = JOptionPane.showInputDialog(null,
-//                "Informe a poltrona que será liberada:",
-//                "Cancelar passagem",
-//                JOptionPane.QUESTION_MESSAGE);
-//        try {
-//            int poltrona = Integer.parseInt(poltronaCancel);
-//                if(poltrona < 1 || poltrona > 40) {
-//                    JOptionPane.showMessageDialog(null, 
-//                            "Número de poltrona inválido");
-//                } else {
-//                    if (verificaPoltrona(poltrona)) {
-//                        int resposta = JOptionPane.showConfirmDialog(null,
-//                                String.format("Deseja realmente cancelar passagem da poltrona %d?", poltrona),
-//                                    "Cancelar passagem",
-//                                    JOptionPane.YES_NO_OPTION
-//                                );
-//
-//                        if (resposta == JOptionPane.YES_OPTION) {
-//                            for (Passagem p : passagens) {
-//                                if(p.getPoltrona() == poltrona) {
-//                                    passagens.remove(p);
-//                                    JOptionPane.showMessageDialog(null, "Passagem cancelada com sucesso!");
-//                                    atualizarCorPoltrona();
-//                                }
-//                            }
-//                        }
-//                    } else {
-//                        JOptionPane.showMessageDialog(null, 
-//                                "Não há passagem emitida na poltrona informada");
-//                    }
-//                }
-//        } catch (NumberFormatException e) {
-//            JOptionPane.showMessageDialog(null, 
-//                    "Número de poltrona inválido",
-//                    "Erro",
-//                    JOptionPane.ERROR_MESSAGE);
-//                    return;
-//        }
- String poltronaCancel = JOptionPane.showInputDialog(null,
-            "Informe a poltrona que será liberada:",
-            "Cancelar passagem",
-            JOptionPane.QUESTION_MESSAGE);
-    try {
-        int poltrona = Integer.parseInt(poltronaCancel);
-        if (poltrona < 1 || poltrona > 40) {
-            JOptionPane.showMessageDialog(null, "Número de poltrona inválido");
-        } else {
-            if (verificaPoltrona(poltrona)) {
-                int resposta = JOptionPane.showConfirmDialog(null,
-                        String.format("Deseja realmente cancelar passagem da poltrona %d?", poltrona),
-                        "Cancelar passagem",
-                        JOptionPane.YES_NO_OPTION
-                );
+        String poltronaCancel = JOptionPane.showInputDialog(null,
+                   "Informe a poltrona que será liberada:",
+                   "Cancelar passagem",
+                   JOptionPane.QUESTION_MESSAGE);
+           try {
+               int poltrona = Integer.parseInt(poltronaCancel);
+               if (poltrona < 1 || poltrona > 40) {
+                   JOptionPane.showMessageDialog(null, "Número de poltrona inválido");
+               } else {
+                   if (verificaPoltrona(poltrona)) {
+                       int resposta = JOptionPane.showConfirmDialog(null,
+                               String.format("Deseja realmente cancelar passagem da poltrona %d?", poltrona),
+                               "Cancelar passagem",
+                               JOptionPane.YES_NO_OPTION
+                       );
 
-                if (resposta == JOptionPane.YES_OPTION) {
-                    Iterator<Passagem> iterator = passagens.iterator();
-                    while (iterator.hasNext()) {
-                        Passagem p = iterator.next();
-                        if (p.getPoltrona() == poltrona) {
-                            iterator.remove();
-                            JOptionPane.showMessageDialog(null, "Passagem cancelada com sucesso!");
-                            atualizarCorPoltrona();
-                            break;
-                        }
-                    }
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "Não há passagem emitida na poltrona informada");
-            }
-        }
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(null,
-                "Número de poltrona inválido",
-                "Erro",
-                JOptionPane.ERROR_MESSAGE);
-    }
+                       if (resposta == JOptionPane.YES_OPTION) {
+                           Iterator<Passagem> iterator = passagens.iterator();
+                           while (iterator.hasNext()) {
+                               Passagem p = iterator.next();
+                               if (p.getPoltrona() == poltrona) {
+                                   iterator.remove();
+                                   JOptionPane.showMessageDialog(null, "Passagem cancelada com sucesso!");
+                                   atualizarCorPoltrona();
+                                   break;
+                               }
+                           }
+                       }
+                   } else {
+                       JOptionPane.showMessageDialog(null, "Não há passagem emitida na poltrona informada");
+                   }
+               }
+           } catch (NumberFormatException e) {
+               JOptionPane.showMessageDialog(null,
+                       "Número de poltrona inválido",
+                       "Erro",
+                       JOptionPane.ERROR_MESSAGE);
+           }
     }//GEN-LAST:event_menuPassagensItem2ActionPerformed
 
     public static void main(String args[]) {
@@ -1580,6 +1547,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnPoltrona8;
     private javax.swing.JButton btnPoltrona9;
     private javax.swing.JLabel imgOnibus;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar menuBarra1;
     private javax.swing.JMenu menuCidades1;
     private javax.swing.JMenuItem menuCidadesItem1;
