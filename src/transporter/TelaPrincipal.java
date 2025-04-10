@@ -3,11 +3,13 @@ package transporter;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 
 public class TelaPrincipal extends javax.swing.JFrame {
     
@@ -148,120 +150,315 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnPoltrona1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 60, 60));
 
         btnPoltrona2.setText("02");
+        btnPoltrona2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 60, 60));
 
         btnPoltrona3.setText("03");
+        btnPoltrona3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 60, 60));
 
         btnPoltrona4.setText("04");
+        btnPoltrona4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 60, 60));
 
         btnPoltrona5.setText("05");
+        btnPoltrona5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 60, 60));
 
         btnPoltrona6.setText("06");
+        btnPoltrona6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 60, 60));
 
         btnPoltrona7.setText("07");
+        btnPoltrona7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 60, 60));
 
         btnPoltrona8.setText("08");
+        btnPoltrona8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 60, 60));
 
         btnPoltrona9.setText("09");
+        btnPoltrona9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 60, 60));
 
         btnPoltrona10.setText("10");
+        btnPoltrona10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona10ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, 60, 60));
 
         btnPoltrona11.setText("11");
+        btnPoltrona11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona11ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, 60, 60));
 
         btnPoltrona12.setText("12");
+        btnPoltrona12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona12ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona12, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 60, 60));
 
         btnPoltrona13.setText("13");
+        btnPoltrona13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona13ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona13, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 390, 60, 60));
 
         btnPoltrona14.setText("14");
+        btnPoltrona14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona14ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona14, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 320, 60, 60));
 
         btnPoltrona15.setText("15");
+        btnPoltrona15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona15ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 60, 60));
 
         btnPoltrona16.setText("16");
+        btnPoltrona16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona16ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona16, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 190, 60, 60));
 
         btnPoltrona17.setText("17");
+        btnPoltrona17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona17ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 390, 60, 60));
 
         btnPoltrona18.setText("18");
+        btnPoltrona18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona18ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, 60, 60));
 
         btnPoltrona19.setText("19");
+        btnPoltrona19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona19ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 60, 60));
 
         btnPoltrona20.setText("20");
+        btnPoltrona20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona20ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 190, 60, 60));
 
         btnPoltrona21.setText("21");
+        btnPoltrona21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona21ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona21, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, 60, 60));
 
         btnPoltrona22.setText("22");
+        btnPoltrona22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona22ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona22, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, 60, 60));
 
         btnPoltrona23.setText("23");
+        btnPoltrona23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona23ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona23, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, 60, 60));
 
         btnPoltrona24.setText("24");
+        btnPoltrona24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona24ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona24, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 190, 60, 60));
 
         btnPoltrona25.setText("25");
+        btnPoltrona25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona25ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona25, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 390, 60, 60));
 
         btnPoltrona26.setText("26");
+        btnPoltrona26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona26ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona26, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 320, 60, 60));
 
         btnPoltrona27.setText("27");
+        btnPoltrona27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona27ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona27, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 120, 60, 60));
 
         btnPoltrona28.setText("28");
+        btnPoltrona28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona28ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona28, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 190, 60, 60));
 
         btnPoltrona29.setText("29");
+        btnPoltrona29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona29ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona29, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 390, 60, 60));
 
         btnPoltrona30.setText("30");
+        btnPoltrona30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona30ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 320, 60, 60));
 
         btnPoltrona31.setText("31");
+        btnPoltrona31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona31ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona31, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 120, 60, 60));
 
         btnPoltrona32.setText("32");
+        btnPoltrona32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona32ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 60, 60));
 
         btnPoltrona33.setText("33");
+        btnPoltrona33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona33ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona33, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 390, 60, 60));
 
         btnPoltrona34.setText("34");
+        btnPoltrona34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona34ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona34, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 320, 60, 60));
 
         btnPoltrona35.setText("35");
+        btnPoltrona35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona35ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona35, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 60, 60));
 
         btnPoltrona36.setText("36");
+        btnPoltrona36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona36ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona36, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 190, 60, 60));
 
         btnPoltrona37.setText("37");
+        btnPoltrona37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona37ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona37, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 390, 60, 60));
 
         btnPoltrona38.setText("38");
+        btnPoltrona38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona38ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona38, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 320, 60, 60));
 
         btnPoltrona39.setText("39");
+        btnPoltrona39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona39ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona39, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 120, 60, 60));
 
         btnPoltrona40.setText("40");
+        btnPoltrona40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoltrona40ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPoltrona40, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 190, 60, 60));
 
         imgOnibus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/onibusContorno2.png"))); // NOI18N
@@ -332,6 +529,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuPassagensItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/script_delete.png"))); // NOI18N
         menuPassagensItem2.setText("Cancelar Passagem");
+        menuPassagensItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuPassagensItem2ActionPerformed(evt);
+            }
+        });
         menuPassagens1.add(menuPassagensItem2);
 
         menuPassagensItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/book_open.png"))); // NOI18N
@@ -366,7 +568,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         }
     
     private static boolean verificaPoltrona (int poltrona) {
-        for (Passagem p : TelaPrincipal.passagens) {
+        for (Passagem p : passagens) {
             if (p.getPoltrona() == poltrona) {
                 return true;
             }
@@ -375,7 +577,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
     
     private void btnPoltrona1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona1ActionPerformed
-        // TODO add your handling code here:
+        if (verificaPoltrona(1)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            } 
+            
+        }
     }//GEN-LAST:event_btnPoltrona1ActionPerformed
 
     private void menuPassageirosItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPassageirosItem1ActionPerformed
@@ -421,6 +639,826 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void menuPassagens1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPassagens1ActionPerformed
 
     }//GEN-LAST:event_menuPassagens1ActionPerformed
+
+    private void btnPoltrona2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona2ActionPerformed
+        if (verificaPoltrona(2)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona2ActionPerformed
+
+    private void btnPoltrona3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona3ActionPerformed
+        if (verificaPoltrona(3)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona3ActionPerformed
+
+    private void btnPoltrona4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona4ActionPerformed
+        if (verificaPoltrona(4)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona4ActionPerformed
+
+    private void btnPoltrona5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona5ActionPerformed
+        if (verificaPoltrona(5)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona5ActionPerformed
+
+    private void btnPoltrona6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona6ActionPerformed
+        if (verificaPoltrona(6)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona6ActionPerformed
+
+    private void btnPoltrona7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona7ActionPerformed
+                if (verificaPoltrona(7)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona7ActionPerformed
+
+    private void btnPoltrona8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona8ActionPerformed
+                if (verificaPoltrona(8)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona8ActionPerformed
+
+    private void btnPoltrona9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona9ActionPerformed
+                if (verificaPoltrona(9)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona9ActionPerformed
+
+    private void btnPoltrona10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona10ActionPerformed
+                if (verificaPoltrona(10)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona10ActionPerformed
+
+    private void btnPoltrona11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona11ActionPerformed
+                if (verificaPoltrona(11)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona11ActionPerformed
+
+    private void btnPoltrona12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona12ActionPerformed
+                if (verificaPoltrona(12)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona12ActionPerformed
+
+    private void btnPoltrona13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona13ActionPerformed
+                if (verificaPoltrona(13)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona13ActionPerformed
+
+    private void btnPoltrona14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona14ActionPerformed
+                if (verificaPoltrona(14)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona14ActionPerformed
+
+    private void btnPoltrona15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona15ActionPerformed
+                if (verificaPoltrona(15)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona15ActionPerformed
+
+    private void btnPoltrona16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona16ActionPerformed
+                if (verificaPoltrona(16)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona16ActionPerformed
+
+    private void btnPoltrona17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona17ActionPerformed
+                if (verificaPoltrona(17)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona17ActionPerformed
+
+    private void btnPoltrona18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona18ActionPerformed
+                if (verificaPoltrona(18)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona18ActionPerformed
+
+    private void btnPoltrona19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona19ActionPerformed
+                if (verificaPoltrona(19)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona19ActionPerformed
+
+    private void btnPoltrona20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona20ActionPerformed
+                if (verificaPoltrona(20)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona20ActionPerformed
+
+    private void btnPoltrona21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona21ActionPerformed
+                if (verificaPoltrona(21)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona21ActionPerformed
+
+    private void btnPoltrona22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona22ActionPerformed
+                if (verificaPoltrona(22)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona22ActionPerformed
+
+    private void btnPoltrona23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona23ActionPerformed
+                if (verificaPoltrona(23)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona23ActionPerformed
+
+    private void btnPoltrona24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona24ActionPerformed
+                if (verificaPoltrona(24)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona24ActionPerformed
+
+    private void btnPoltrona25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona25ActionPerformed
+                if (verificaPoltrona(25)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona25ActionPerformed
+
+    private void btnPoltrona26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona26ActionPerformed
+                if (verificaPoltrona(26)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona26ActionPerformed
+
+    private void btnPoltrona27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona27ActionPerformed
+                if (verificaPoltrona(27)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona27ActionPerformed
+
+    private void btnPoltrona28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona28ActionPerformed
+                if (verificaPoltrona(28)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona28ActionPerformed
+
+    private void btnPoltrona29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona29ActionPerformed
+                if (verificaPoltrona(29)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona29ActionPerformed
+
+    private void btnPoltrona30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona30ActionPerformed
+                if (verificaPoltrona(30)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona30ActionPerformed
+
+    private void btnPoltrona31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona31ActionPerformed
+                if (verificaPoltrona(31)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona31ActionPerformed
+
+    private void btnPoltrona32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona32ActionPerformed
+                if (verificaPoltrona(32)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona32ActionPerformed
+
+    private void btnPoltrona33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona33ActionPerformed
+                if (verificaPoltrona(33)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona33ActionPerformed
+
+    private void btnPoltrona34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona34ActionPerformed
+                if (verificaPoltrona(34)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona34ActionPerformed
+
+    private void btnPoltrona35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona35ActionPerformed
+                if (verificaPoltrona(35)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona35ActionPerformed
+
+    private void btnPoltrona36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona36ActionPerformed
+                if (verificaPoltrona(36)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona36ActionPerformed
+
+    private void btnPoltrona37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona37ActionPerformed
+                if (verificaPoltrona(37)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona37ActionPerformed
+
+    private void btnPoltrona38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona38ActionPerformed
+                if (verificaPoltrona(38)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona38ActionPerformed
+
+    private void btnPoltrona39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona39ActionPerformed
+        if (verificaPoltrona(39)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona39ActionPerformed
+
+    private void btnPoltrona40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoltrona40ActionPerformed
+        if (verificaPoltrona(40)) {
+            JOptionPane.showMessageDialog(null, 
+                    String.format("Poltrona ocupada!")
+            );
+        } else {
+            int resposta = JOptionPane.showConfirmDialog(null,
+                    "Poltrona livre.\nDeseja realizar uma venda?",
+                    "Poltrona livre",
+                    JOptionPane.YES_NO_OPTION
+            );
+            
+            if (resposta == JOptionPane.YES_OPTION) {
+                TelaVendaPassagem telaVenPas = new TelaVendaPassagem();
+                telaVenPas.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_btnPoltrona40ActionPerformed
+
+    private void menuPassagensItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPassagensItem2ActionPerformed
+//        String poltronaCancel = JOptionPane.showInputDialog(null,
+//                "Informe a poltrona que será liberada:",
+//                "Cancelar passagem",
+//                JOptionPane.QUESTION_MESSAGE);
+//        try {
+//            int poltrona = Integer.parseInt(poltronaCancel);
+//                if(poltrona < 1 || poltrona > 40) {
+//                    JOptionPane.showMessageDialog(null, 
+//                            "Número de poltrona inválido");
+//                } else {
+//                    if (verificaPoltrona(poltrona)) {
+//                        int resposta = JOptionPane.showConfirmDialog(null,
+//                                String.format("Deseja realmente cancelar passagem da poltrona %d?", poltrona),
+//                                    "Cancelar passagem",
+//                                    JOptionPane.YES_NO_OPTION
+//                                );
+//
+//                        if (resposta == JOptionPane.YES_OPTION) {
+//                            for (Passagem p : passagens) {
+//                                if(p.getPoltrona() == poltrona) {
+//                                    passagens.remove(p);
+//                                    JOptionPane.showMessageDialog(null, "Passagem cancelada com sucesso!");
+//                                    atualizarCorPoltrona();
+//                                }
+//                            }
+//                        }
+//                    } else {
+//                        JOptionPane.showMessageDialog(null, 
+//                                "Não há passagem emitida na poltrona informada");
+//                    }
+//                }
+//        } catch (NumberFormatException e) {
+//            JOptionPane.showMessageDialog(null, 
+//                    "Número de poltrona inválido",
+//                    "Erro",
+//                    JOptionPane.ERROR_MESSAGE);
+//                    return;
+//        }
+ String poltronaCancel = JOptionPane.showInputDialog(null,
+            "Informe a poltrona que será liberada:",
+            "Cancelar passagem",
+            JOptionPane.QUESTION_MESSAGE);
+    try {
+        int poltrona = Integer.parseInt(poltronaCancel);
+        if (poltrona < 1 || poltrona > 40) {
+            JOptionPane.showMessageDialog(null, "Número de poltrona inválido");
+        } else {
+            if (verificaPoltrona(poltrona)) {
+                int resposta = JOptionPane.showConfirmDialog(null,
+                        String.format("Deseja realmente cancelar passagem da poltrona %d?", poltrona),
+                        "Cancelar passagem",
+                        JOptionPane.YES_NO_OPTION
+                );
+
+                if (resposta == JOptionPane.YES_OPTION) {
+                    Iterator<Passagem> iterator = passagens.iterator();
+                    while (iterator.hasNext()) {
+                        Passagem p = iterator.next();
+                        if (p.getPoltrona() == poltrona) {
+                            iterator.remove();
+                            JOptionPane.showMessageDialog(null, "Passagem cancelada com sucesso!");
+                            atualizarCorPoltrona();
+                            break;
+                        }
+                    }
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Não há passagem emitida na poltrona informada");
+            }
+        }
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(null,
+                "Número de poltrona inválido",
+                "Erro",
+                JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_menuPassagensItem2ActionPerformed
 
     public static void main(String args[]) {
         Passageiro p01 = new Passageiro("Jair Leão", "451.356.415-12", "jairleao@gmail.com");
